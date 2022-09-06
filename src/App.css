@@ -26,3 +26,35 @@
   border-radius: 5px;
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
 }
+
+.header h1 {
+  color: #ccc;
+  font-weight: 300;
+  text-align: center;
+  margin: 50px 20px 60px 20px;
+  font-family: "Josefin Slab", serif;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+  margin-bottom: 50px;
+  width: 100%;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.list {
+  width: 90%;
+  margin: auto;
+  max-height: 300px;
+  overflow: hidden;
+  overflow-y: auto;
+}
