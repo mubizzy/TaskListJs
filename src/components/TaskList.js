@@ -1,12 +1,8 @@
-import React from 'react'
+import React, { useContext } from "react";
+import { TaskListContext } from "./context.js/TaskListContext";
 
 const TaskList = () => {
-  return (
-    
-    <div>TaskList</div>
-    kjj
-  )
-  
-}
+  return <div>TaskList</div>;
+};
 
-export default TaskList
+export default TaskList;
