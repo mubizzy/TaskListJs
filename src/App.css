@@ -141,3 +141,17 @@
   color: #bbb;
   margin-right: 20px;
 }
+
+.clear-btn {
+  width: 100px;
+  height: 35px;
+  background-color: #790e43;
+  color: #ccc;
+  border: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  border-radius: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  outline: none;
+  cursor: pointer;
+}
