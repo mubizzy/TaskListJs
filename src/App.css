@@ -98,3 +98,23 @@
 .btn {
   margin: 10px;
 }
+
+.add-task-btn {
+  min-width: 100px;
+  background-color: #790e43;
+  color: #ccc;
+  border: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  border-radius: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  outline: none;
+  cursor: pointer;
+}
+
+.list-item {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+  padding-bottom: 5px;
+}
