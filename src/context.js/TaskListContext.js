@@ -8,7 +8,7 @@ const TaskListContextProvider = () => {
     {task:"wash the car",id:2}
     {task:"Write some code",id:3}
   ])
-  return <TaskListContext.Provider />;
+  return ;
 };
 
 export default TaskListContextProvider;

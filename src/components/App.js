@@ -1,16 +1,9 @@
 import React from "react";
 import "../App.css";
 import TaskListContextProvider from "../context.js/TaskListContext";
-import Header from "./Header";
+import "../App.css";
 const App = () => {
-  return (
-    <TaskListContextProvider>
-      <div className="app-wrapper">
-        <Header />
-      </div>
-      ;
-    </TaskListContextProvider>
-  );
+  return <TaskListContextProvider></TaskListContextProvider>;
 };
 
 export default App;
