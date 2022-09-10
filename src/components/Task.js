@@ -3,7 +3,7 @@ import React from "react";
 export const Task = ({ task }) => {
   return (
     <li className="list-item">
-      <span>{task.task} </span>
+      <span>{task.title} </span>
       <div>
         <button className="btn-delete task-btn">
           <i className=" fas fa-light fa-pen"></i>
