@@ -1,26 +1,26 @@
-import React from 'react'
+import React from "react";
 
 const TaskForm = () => {
   return (
-    <form onSubmit={} className="form">
+    <form onSubmit={handleSubmit} className="form">
       <input
         type="text"
         placeholder="Add Task..."
-        value={}
-        onChange={}
+        value={title}
+        onChange={handleChange}
         required
         className="task-input"
       />
       <div className="buttons">
         <button type="submit" className="btn add-task-btn">
-          {editItem ? 'Edit Task' : 'Add Task'}
+          {editItem ? "Edit Task" : "Add Task"}
         </button>
         <button className="btn clear-btn" onClick={clearList}>
           Clear
         </button>
       </div>
     </form>
-  )
-}
+  );
+};
 
-export default TaskForm
+export default TaskForm;
