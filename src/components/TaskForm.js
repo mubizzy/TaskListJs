@@ -1,16 +1,15 @@
-import React, { useContext } from "react";
-import { useState } from "react";
+import React, { useContext, useState } from "react";
 import { TaskListContext } from "../context.js/TaskListContext";
-import uuid from "uuid";
 
 const TaskForm = () => {
   const { addTasks } = useContext(TaskListContext);
 
-  const [title, setTitle] = useState("");
+  const [titl, setTitle] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    addTasks(title);
+    addTasks(titl);
+    setTitle("");
   };
 
   const handleChange = (e) => {
@@ -21,10 +20,9 @@ const TaskForm = () => {
     <form onSubmit={handleSubmit} className="form">
       <input
         onChange={handleChange}
-        value="{title}"
         type="text"
         placeholder="Add Task..."
-        // value={title}
+        value={title}
         // onChange={handleChange}
         required
         className="task-input"
