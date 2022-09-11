@@ -41,7 +41,17 @@ const TaskListContextProvider = (props) => {
   };
 
   return (
-    <TaskListContext.Provider value={{ tasks, addTask, removeTask }}>
+    <TaskListContext.Provider
+      value={{
+        tasks,
+        addTask,
+        removeTask,
+        clearList,
+        findItem,
+        editTask,
+        editItem,
+      }}
+    >
       {props.children}
     </TaskListContext.Provider>
   );
