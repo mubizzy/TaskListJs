@@ -14,8 +14,9 @@ const TaskListContextProvider = (props) => {
 
   const [editItem, setEditItem] = useState(null);
 
-  const addTask = () => {
-    setTasks([...tasks, { title: title }]);
+  // Add tasks
+  const addTask = (title) => {
+    setTasks([...tasks, { title, id: uuid() }]);
   };
 
   const removeTask = (id) => {
