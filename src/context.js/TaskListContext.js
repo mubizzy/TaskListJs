@@ -22,6 +22,24 @@ const TaskListContextProvider = (props) => {
     setTasks([]);
   };
 
+  const findItem = (id) => {
+    const item = tasks.find((task) => task.id === id);
+
+    setEditItem(item);
+  };
+
+  // Edit task
+  const editTask = (title, id) => {
+    const newTasks = tasks.map((task) =>
+      task.id === id ? { title, id } : task
+    );
+
+    console.log(newTasks);
+
+    setTasks(newTasks);
+    setEditItem(null);
+  };
+
   return (
     <TaskListContext.Provider value={{ tasks, addTask, removeTask }}>
       {props.children}
